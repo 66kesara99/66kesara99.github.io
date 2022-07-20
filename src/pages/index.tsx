@@ -12,7 +12,7 @@ const IndexPage = () => {
             alt="Profile image"
           />
           <div className="my-auto mx-9">
-            <div className="text-4xl lg:text-5xl xl:text-6xl mt-2 font-bold text-white flex justify-center">
+            <div className="text-4xl lg:text-5xl xl:text-6xl mt-6 sm:mt-0 font-bold text-white flex justify-center">
               <h1 className="animate-[fall_1s_ease-out_normal]">K</h1>
               <h1 className="animate-[fall_3s_ease-out_normal]">e</h1>
               <h1 className="animate-[fall_2s_ease-out_normal]">s</h1>
