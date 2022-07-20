@@ -5,7 +5,17 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        fall: "fall 2s ease-out normal",
+      },
+      keyframes: {
+        fall: {
+          "0%": { transform: "translateY(-1000px)" },
+          "50%": { transform: "translateY(5px)" },
+        },
+      },
+    },
   },
   plugins: [],
 };
