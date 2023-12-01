@@ -114,8 +114,8 @@ export const Background = () => {
 
   const initCanvas = (canvas: HTMLCanvasElement, ballCount: number) => {
     setCanvas(canvas);
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
 
     const c = canvas.getContext("2d");
 

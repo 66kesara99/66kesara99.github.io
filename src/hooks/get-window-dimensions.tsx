@@ -9,11 +9,16 @@ export const WIDTH_PREFIX = {
 };
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
+  if (typeof window !== "undefined") {
+    const { innerWidth: width, innerHeight: height } = window;
+
+    return {
+      width,
+      height,
+    };
+  } else {
+    return { width: 0, height: 0 };
+  }
 }
 
 export default function useWindowDimensions() {
@@ -22,12 +27,14 @@ export default function useWindowDimensions() {
   );
 
   useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
+    if (typeof window !== "undefined") {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
 
   return windowDimensions;
