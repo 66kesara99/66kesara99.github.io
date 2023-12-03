@@ -104,8 +104,6 @@ export const Background = () => {
         ballCount = 50;
       }
 
-      console.log(width, ballCount);
-
       if (canvas) {
         initCanvas(canvas, ballCount);
       }
