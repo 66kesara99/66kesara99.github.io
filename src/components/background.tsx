@@ -168,5 +168,5 @@ export const Background = () => {
     });
   };
 
-  return <canvas ref={ref} onClick={onClick} />;
+  return <canvas ref={ref} onMouseMove={onClick} />;
 };

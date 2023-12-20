@@ -1,16 +1,15 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import TiltingProfile from "./tilting-profile";
 
 export const Content = () => {
   return (
     <div className="absolute top-0 left-0 h-screen pointer-events-none">
-      <div className="flex h-screen w-screen bg-black bg-opacity-40">
+      <div className="flex h-screen w-screen bg-black bg-opacity-10">
         <div className="flex flex-wrap justify-center m-auto">
-          <StaticImage
-            className="rounded-full border-8 border-white w-60 xl:w-80 shadow-2xl shadow-gray-700"
-            src="../images/profile.jpg"
-            alt="Profile image"
-          />
+          <div className="pointer-events-auto">
+            <TiltingProfile />
+          </div>
           <div className="my-auto mx-9 pointer-events-auto">
             <div className="text-4xl lg:text-5xl xl:text-6xl mt-6 sm:mt-0 font-bold text-white flex justify-center">
               <h1 className="animate-[fall_1s_ease-out_normal]">K</h1>
