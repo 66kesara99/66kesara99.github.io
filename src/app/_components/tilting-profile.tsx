@@ -52,7 +52,7 @@ export default function TiltingProfile() {
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="relative h-72 w-72 xl:h-96 xl:w-96 rounded-full bg-gradient-to-br from-indigo-300 to-violet-300"
+      className="relative h-72 w-72 xl:h-96 xl:w-96 rounded-full bg-gradient-to-br from-indigo-300 to-slate-300"
     >
       <div
         style={{
