@@ -12,6 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        fall: "fall 2s ease-out normal",
+      },
+      keyframes: {
+        fall: {
+          "0%": { transform: "translateY(-1000px)" },
+          "50%": { transform: "translateY(5px)" },
+        },
+      },
     },
   },
   plugins: [],
