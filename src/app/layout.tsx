@@ -30,6 +30,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "W5uyS5qnPmzFQ0ALuvwy5w0pWVI7EE0TTUXZ9sgqJqg",
+  },
 };
 
 const poppins = Poppins({
