@@ -5,7 +5,31 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Kesara Gamlath",
-  description: "Portfolio of Kesara Gamlath. A Full Stack Web Developer.",
+  description: "Kesara Gamlath. A Full Stack Web Developer.",
+  referrer: "origin-when-cross-origin",
+  keywords: ["Kesara", "Gamlath", "66kesara99"],
+  authors: [{ name: "Kesara Gamlath" }],
+  creator: "Kesara Gamlath",
+  publisher: "Kesara Gamlath",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://66kesara99.github.io/"),
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const poppins = Poppins({
